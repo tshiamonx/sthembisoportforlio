@@ -307,6 +307,55 @@ section #work1,
 section {
   background-color: whitesmoke;
 }
+.thumbnails {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke; /* Match the section background */
+  padding: 20px 0;
+}
+
+.thumbnail {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail img {
+  width: 150px; /* Thumbnail size */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid black; /* Optional border */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.thumbnail p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: rgb(41, 42, 44);
+  font-weight: bold;
+}
+
+.thumbnail a {
+  text-decoration: none;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.thumbnail img:hover {
+  border-color: orangered; /* Highlight on hover */
+}
+@media (max-width: 768px) {
+  .thumbnails {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .thumbnail img {
+    width: 100px; /* Smaller size for mobile */
+  }
+}
+
 footer {
   background: black;
   height: 50vh;
