@@ -321,7 +321,7 @@ section {
 }
 
 .thumbnail img {
-  width: 150px; /* Thumbnail size */
+  width: 600px; /* Thumbnail size */
   height: auto; /* Maintain aspect ratio */
   border: 2px solid black; /* Optional border */
   border-radius: 8px; /* Rounded corners */
